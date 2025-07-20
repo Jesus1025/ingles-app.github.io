@@ -1,0 +1,312 @@
+[
+    {
+        "english": "The quick brown fox jumps over the lazy dog.",
+        "spanish": "El zorro rápido y marrón salta sobre el perro perezoso.",
+        "explanation": "Una frase clásica para practicar mecanografía, que contiene todas las letras del alfabeto inglés."
+    },
+    {
+        "english": "I am learning English every day.",
+        "spanish": "Estoy aprendiendo inglés cada día.",
+        "explanation": "Una frase sencilla para indicar una acción continua en el presente."
+    },
+    {
+        "english": "Could you please pass me the salt?",
+        "spanish": "¿Podrías pasarme la sal, por favor?",
+        "explanation": "Una forma educada de pedir algo en inglés, usando 'Could you please'."
+    },
+    {
+        "english": "She has been working here for five years.",
+        "spanish": "Ella ha estado trabajando aquí durante cinco años.",
+        "explanation": "Ejemplo de 'Present Perfect Continuous', usado para acciones que comenzaron en el pasado y continúan hasta el presente."
+    },
+    {
+        "english": "The early bird catches the worm.",
+        "spanish": "Al que madruga, Dios le ayuda. (Literalmente: El pájaro madrugador atrapa el gusano.)",
+        "explanation": "Un dicho popular en inglés que significa que aquellos que actúan con prontitud obtienen ventajas."
+    },
+    {
+        "english": "I will call you later.",
+        "spanish": "Te llamaré más tarde.",
+        "explanation": "Una frase sencilla para indicar una acción futura."
+    },
+    {
+        "english": "What time is it?",
+        "spanish": "¿Qué hora es?",
+        "explanation": "Pregunta común para saber la hora."
+    },
+    {
+        "english": "Can I help you?",
+        "spanish": "¿Puedo ayudarte?",
+        "explanation": "Una forma común de ofrecer ayuda."
+    },
+    {
+        "english": "Excuse me, where is the nearest bank?",
+        "spanish": "Disculpe, ¿dónde está el banco más cercano?",
+        "explanation": "Frase útil para pedir indicaciones."
+    },
+    {
+        "english": "It's raining cats and dogs.",
+        "spanish": "Está lloviendo a cántaros.",
+        "explanation": "Un modismo inglés que significa que está lloviendo muy fuerte."
+    },
+    {
+        "english": "How are you doing today?",
+        "spanish": "¿Cómo estás hoy?",
+        "explanation": "Una forma informal y común de saludar a alguien y preguntar por su bienestar."
+    },
+    {
+        "english": "Don't put all your eggs in one basket.",
+        "spanish": "No pongas todos los huevos en la misma canasta.",
+        "explanation": "Un modismo que aconseja no concentrar todos tus recursos o esfuerzos en una sola cosa, para evitar un riesgo total."
+    },
+    {
+        "english": "Practice makes perfect.",
+        "spanish": "La práctica hace al maestro.",
+        "explanation": "Un dicho popular que enfatiza la importancia de la práctica para mejorar una habilidad."
+    },
+    {
+        "english": "I need to charge my phone.",
+        "spanish": "Necesito cargar mi teléfono.",
+        "explanation": "Una frase práctica para la vida diaria."
+    },
+    {
+        "english": "Could you repeat that, please?",
+        "spanish": "¿Podrías repetir eso, por favor?",
+        "explanation": "Una frase útil cuando no has entendido algo completamente."
+    },
+    {
+        "english": "It's a piece of cake.",
+        "spanish": "Es pan comido.",
+        "explanation": "Un modismo que significa que algo es muy fácil de hacer."
+    },
+    {
+        "english": "Let's grab some coffee.",
+        "spanish": "Vamos a tomar un café.",
+        "explanation": "Una invitación casual para ir a tomar café."
+    },
+    {
+        "english": "I'm on my way.",
+        "spanish": "Estoy en camino.",
+        "explanation": "Frase corta para indicar que ya se está yendo al lugar de destino."
+    },
+    {
+        "english": "Break a leg!",
+        "spanish": "¡Mucha suerte! (Literalmente: ¡Rómpete una pierna!)",
+        "explanation": "Una expresión idiomática utilizada para desear suerte a alguien, especialmente antes de una actuación."
+    },
+    {
+        "english": "Long time no see!",
+        "spanish": "¡Cuánto tiempo sin verte!",
+        "explanation": "Una expresión común para saludar a alguien que no has visto en mucho tiempo."
+    },
+    {
+        "english": "Actions speak louder than words.",
+        "spanish": "Las acciones hablan más que las palabras.",
+        "explanation": "Significa que lo que alguien hace es más importante que lo que dice."
+    },
+    {
+        "english": "It's up to you.",
+        "spanish": "Depende de ti.",
+        "explanation": "Significa que la decisión o la responsabilidad recae en la otra persona."
+    },
+    {
+        "english": "It's always darkest before the dawn.",
+        "spanish": "Siempre está más oscuro antes del amanecer.",
+        "explanation": "Un proverbio que sugiere que los momentos más difíciles suelen preceder a la mejora de una situación."
+    },
+    {
+        "english": "Knowledge is power.",
+        "spanish": "El conocimiento es poder.",
+        "explanation": "Una máxima que destaca la importancia del saber y la educación."
+    },
+    {
+        "english": "When in Rome, do as the Romans do.",
+        "spanish": "Donde fueres, haz lo que vieres. (Literalmente: Cuando estés en Roma, haz como los romanos.)",
+        "explanation": "Un dicho que aconseja adaptarse a las costumbres locales cuando se está en un lugar diferente."
+    },
+    {
+        "english": "Every cloud has a silver lining.",
+        "spanish": "No hay mal que por bien no venga. (Literalmente: Cada nube tiene un revestimiento plateado.)",
+        "explanation": "Sugiere que incluso en las situaciones difíciles siempre hay algo positivo."
+    },
+    {
+        "english": "The grass is always greener on the other side.",
+        "spanish": "Siempre se piensa que lo ajeno es mejor. (Literalmente: La hierba siempre es más verde al otro lado.)",
+        "explanation": "Describe la tendencia humana a creer que otras personas están en una situación mejor."
+    },
+    {
+        "english": "Actions speak louder than words.",
+        "spanish": "Las acciones hablan más que las palabras.",
+        "explanation": "Significa que lo que alguien hace es más importante que lo que dice."
+    },
+    {
+        "english": "Don't count your chickens before they hatch.",
+        "spanish": "No vendas la piel del oso antes de cazarlo. (Literalmente: No cuentes tus pollos antes de que eclosionen.)",
+        "explanation": "Aconseja no hacer planes basados en eventos futuros inciertos."
+    },
+    {
+        "english": "A picture is worth a thousand words.",
+        "spanish": "Una imagen vale más que mil palabras.",
+        "explanation": "Significa que una imagen compleja o una idea pueden transmitirse de manera más efectiva visualmente."
+    },
+    {
+        "english": "Curiosity killed the cat.",
+        "spanish": "La curiosidad mató al gato.",
+        "explanation": "Advierte sobre los peligros de ser demasiado curioso o de meterse en asuntos ajenos."
+    },
+    {
+        "english": "Better late than never.",
+        "spanish": "Más vale tarde que nunca.",
+        "explanation": "Indica que es mejor hacer algo con retraso que no hacerlo en absoluto."
+    },
+    {
+        "english": "There's no place like home.",
+        "spanish": "No hay lugar como el hogar.",
+        "explanation": "Expresa el sentimiento de confort y seguridad que se encuentra en casa."
+    },
+    {
+        "english": "When it rains, it pours.",
+        "spanish": "Cuando llueve, diluvia. / Las desgracias nunca vienen solas.",
+        "explanation": "Significa que los problemas o eventos negativos tienden a ocurrir en rápida sucesión."
+    },
+    {
+        "english": "An apple a day keeps the doctor away.",
+        "spanish": "Una manzana al día, al médico aleja.",
+        "explanation": "Un dicho popular que sugiere que comer fruta es bueno para la salud."
+    },
+    {
+        "english": "The early bird catches the worm.",
+        "spanish": "Al que madruga, Dios le ayuda. (Literalmente: El pájaro madrugador atrapa el gusano.)",
+        "explanation": "Significa que las personas que se preparan con anticipación tienen éxito."
+    },
+    {
+        "english": "All that glitters is not gold.",
+        "spanish": "No es oro todo lo que reluce.",
+        "explanation": "Advierte que las apariencias pueden ser engañosas y no todo lo que parece valioso lo es."
+    },
+    {
+        "english": "Haste makes waste.",
+        "spanish": "Vísteme despacio que tengo prisa. (Literalmente: La prisa provoca despilfarro.)",
+        "explanation": "Sugiere que hacer las cosas con prisa a menudo lleva a errores o resultados pobres."
+    },
+    {
+        "english": "You can't have your cake and eat it too.",
+        "spanish": "No puedes estar en misa y repicando. (Literalmente: No puedes tener tu pastel y comértelo también.)",
+        "explanation": "Significa que no puedes disfrutar de dos cosas incompatibles al mismo tiempo."
+    },
+    {
+        "english": "Don't bite the hand that feeds you.",
+        "spanish": "No muerdas la mano que te da de comer.",
+        "explanation": "Advierte contra dañar a alguien que te ayuda o de quien dependes."
+    },
+    {
+        "english": "Easy come, easy go.",
+        "spanish": "Lo que fácil viene, fácil se va.",
+        "explanation": "Sugiere que las cosas obtenidas sin esfuerzo suelen perderse con la misma facilidad."
+    },
+    {
+        "english": "Look before you leap.",
+        "spanish": "Piensa antes de actuar. (Literalmente: Mira antes de saltar.)",
+        "explanation": "Aconseja considerar cuidadosamente las consecuencias antes de tomar una decisión o actuar."
+    },
+    {
+        "english": "The pen is mightier than the sword.",
+        "spanish": "La pluma es más poderosa que la espada.",
+        "explanation": "Sugiere que la escritura y la comunicación son más influyentes que la fuerza militar o la violencia."
+    },
+    {
+        "english": "Too many cooks spoil the broth.",
+        "spanish": "Muchas manos en la sopa la queman. (Literalmente: Demasiados cocineros estropean el caldo.)",
+        "explanation": "Significa que cuando demasiadas personas intentan hacer el mismo trabajo, el resultado es malo."
+    },
+    {
+        "english": "Where there's a will, there's a way.",
+        "spanish": "Querer es poder. (Literalmente: Donde hay voluntad, hay un camino.)",
+        "explanation": "Expresa que si alguien está decidido a hacer algo, encontrará la forma de lograrlo."
+    },
+    {
+        "english": "You can lead a horse to water, but you can't make him drink.",
+        "spanish": "Puedes darle la oportunidad, pero no puedes obligarle. (Literalmente: Puedes llevar un caballo al agua, pero no puedes obligarlo a beber.)",
+        "explanation": "Significa que puedes ofrecer una oportunidad a alguien, pero no puedes obligarlo a aprovecharla."
+    },
+    {
+        "english": "All's well that ends well.",
+        "spanish": "Bien está lo que bien acaba.",
+        "explanation": "Sugiere que los problemas que ocurren durante un proceso no importan si el resultado final es bueno."
+    },
+    {
+        "english": "Don't put off until tomorrow what you can do today.",
+        "spanish": "No dejes para mañana lo que puedas hacer hoy.",
+        "explanation": "Aconseja no posponer las tareas y completarlas sin demora."
+    },
+    {
+        "english": "The show must go on.",
+        "spanish": "El espectáculo debe continuar.",
+        "explanation": "Significa que, a pesar de las dificultades o problemas personales, las obligaciones deben cumplirse."
+    },
+    {
+        "english": "Practice makes perfect.",
+        "spanish": "La práctica hace al maestro.",
+        "explanation": "Enfatiza que la repetición constante de una habilidad lleva a la maestría."
+    },
+    {
+        "english": "Out of sight, out of mind.",
+        "spanish": "Ojos que no ven, corazón que no siente. (Literalmente: Fuera de la vista, fuera de la mente.)",
+        "explanation": "Significa que algo o alguien se olvida fácilmente si no se ve o no se interactúa con ello."
+    },
+    {
+        "english": "Rome wasn't built in a day.",
+        "spanish": "Roma no se construyó en un día.",
+        "explanation": "Significa que los grandes logros requieren tiempo y esfuerzo."
+    },
+    {
+        "english": "What goes around, comes around.",
+        "spanish": "Todo se devuelve. / Lo que siembras, cosechas.",
+        "explanation": "Sugiere que las acciones de una persona (buenas o malas) terminarán afectándola de la misma manera."
+    },
+    {
+        "english": "You can't judge a book by its cover.",
+        "spanish": "No puedes juzgar un libro por su portada.",
+        "explanation": "Advierte contra la formación de una opinión sobre algo o alguien basándose solo en las apariencias."
+    },
+    {
+        "english": "Necessity is the mother of invention.",
+        "spanish": "La necesidad es la madre de la invención.",
+        "explanation": "Significa que la necesidad o la dificultad a menudo inspiran soluciones creativas o innovaciones."
+    },
+    {
+        "english": "Beggars can't be choosers.",
+        "spanish": "A caballo regalado no se le mira el diente. (Literalmente: Los mendigos no pueden elegir.)",
+        "explanation": "Sugiere que uno debe aceptar lo que se le ofrece si está en una posición de necesidad."
+    },
+    {
+        "english": "A penny saved is a penny earned.",
+        "spanish": "Un centavo ahorrado es un centavo ganado.",
+        "explanation": "Enfatiza la importancia del ahorro y la frugalidad."
+    },
+    {
+        "english": "Strike while the iron is hot.",
+        "spanish": "Golpea mientras el hierro está caliente. / Aprovecha la oportunidad.",
+        "explanation": "Aconseja actuar rápidamente cuando surge una oportunidad favorable."
+    },
+    {
+        "english": "The cat's out of the bag.",
+        "spanish": "El secreto ha sido revelado. (Literalmente: El gato está fuera de la bolsa.)",
+        "explanation": "Significa que un secreto ha sido accidentalmente revelado."
+    },
+    {
+        "english": "To err is human, to forgive divine.",
+        "spanish": "Errar es humano, perdonar es divino.",
+        "explanation": "Reconoce que cometer errores es parte de la naturaleza humana y perdonar es una cualidad noble."
+    },
+    {
+        "english": "Birds of a feather flock together.",
+        "spanish": "Dios los cría y ellos se juntan. (Literalmente: Pájaros del mismo plumaje vuelan juntos.)",
+        "explanation": "Sugiere que las personas con intereses y características similares tienden a agruparse."
+    },
+    {
+        "english": "Cut your coat according to your cloth.",
+        "spanish": "Estírate hasta donde dé la sábana. (Literalmente: Corta tu abrigo según tu tela.)",
+        "explanation": "Aconseja vivir dentro de tus posibilidades o adaptar tus planes a tus recursos."
+    }
+]

@@ -1,0 +1,664 @@
+/* Importación de Google Fonts: Lora para encabezados (serif) y Lato para cuerpo (sans-serif) */
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Lato:wght@300;400;700&display=swap');
+
+:root {
+    /* Paleta de colores "Natural / Aesthetic" */
+    --primary-bg: #F8F4E3; /* Crema muy claro / Beige suave para fondo principal */
+    --secondary-bg: #EADBC8; /* Tono de beige-rosado para el header y footer */
+    --card-bg: #FFFFFF; /* Blanco limpio para las tarjetas de contenido */
+    --text-dark: #3E3B30; /* Marrón oscuro casi negro para texto principal */
+    --text-light: #5A5A50; /* Gris-marrón para texto secundario / opaco */
+    --accent-color: #8D8B6F; /* Verde oliva/grisáceo para acentos sutiles */
+    --button-primary: #A79277; /* Marrón claro / Bronce para botones principales */
+    --button-accent: #DAA868; /* Dorado suave para botones de acción */
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --border-soft: #D5C6B0; /* Borde suave en tonos tierra */
+    --transition-speed: 0.4s; /* Transiciones más suaves */
+
+    /* Colores para los juegos (adaptados al nuevo estilo) */
+    --correct-color: #6C925B; /* Verde más natural/terroso */
+    --incorrect-color: #BD6A6F; /* Rojo suave/rosado */
+    --matched-card-color: #DDEEE9; /* Fondo para cartas encontradas (verde muy pálido) */
+    --card-face-color: #FDF9EC; /* Fondo para la cara visible de la carta (crema pálido) */
+    --card-back-color: var(--button-primary); /* Color de la parte trasera de la tarjeta, usando el color del botón principal */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif; /* Fuente principal para el cuerpo de texto */
+    background-color: var(--primary-bg); /* Fondo crema suave */
+    color: var(--text-dark); /* Texto principal en marrón oscuro */
+    line-height: 1.8; /* Mayor espaciado entre líneas para legibilidad */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header {
+    background-color: var(--secondary-bg); /* Fondo beige-rosado para el header */
+    color: var(--text-dark);
+    padding: 3.5rem 2rem; /* Más padding */
+    text-align: center;
+    box-shadow: 0 4px 12px var(--shadow-color); /* Sombra suave */
+    animation: fadeInDown var(--transition-speed) ease-out;
+    border-bottom: 1px solid var(--border-soft);
+}
+
+.header h1 {
+    font-family: 'Lora', serif; /* Fuente serif elegante para el título */
+    font-size: 3.2rem; /* Tamaño más grande */
+    margin-bottom: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.5px; /* Espaciado sutil */
+    color: var(--text-dark); /* Título en el color de texto principal */
+}
+
+.header p {
+    font-size: 1.3rem;
+    opacity: 0.8;
+    font-weight: 400;
+    line-height: 1.5;
+    max-width: 600px;
+    margin: 0.5rem auto 0;
+    color: var(--text-light); /* Texto secundario en gris-marrón */
+}
+
+.main-content {
+    flex-grow: 1;
+    padding: 3rem; /* Más padding general */
+    max-width: 1000px; /* Un poco más estrecho para un look más íntimo */
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Secciones principales */
+.hidden-section {
+    display: none;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out; /* Transiciones más lentas y suaves */
+}
+
+.section-visible {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+/* Botones principales */
+.button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem; /* Más espacio entre botones */
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh; /* Más alto para centrar mejor */
+}
+
+.main-button {
+    font-family: 'Lato', sans-serif;
+    background-color: var(--button-primary); /* Marrón claro/Bronce */
+    color: var(--card-bg); /* Texto blanco sobre el botón */
+    border: none;
+    padding: 1.5rem 3rem;
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 6px 15px var(--shadow-color);
+    transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    width: 100%;
+    max-width: 380px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.main-button:hover {
+    background-color: #938069; /* Tono más oscuro de bronce */
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra más definida al hover */
+}
+
+/* Estilos para secciones de contenido */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem; /* Más margen */
+    flex-wrap: wrap;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px dashed var(--border-soft); /* Borde punteado suave */
+}
+
+.section-header h2 {
+    font-family: 'Lora', serif;
+    font-size: 2.8rem;
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.back-button {
+    background-color: transparent;
+    color: var(--text-light);
+    border: 1px solid var(--text-light);
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease, transform 0.2s ease;
+}
+
+.back-button:hover {
+    background-color: var(--accent-color); /* Verde oliva al hover */
+    color: var(--card-bg);
+    transform: scale(1.03);
+    border-color: var(--accent-color);
+}
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.8rem; /* Espacio moderado */
+    margin-bottom: 3rem;
+}
+
+/* Tarjetas de frases/palabras */
+.card {
+    background-color: var(--card-bg); /* Blanco limpio para las tarjetas */
+    color: var(--text-dark);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    padding: 2.2rem; /* Más padding */
+    transition: transform var(--transition-speed) ease, box-shadow var(--transition-speed) ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid var(--border-soft); /* Borde suave */
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+.card h3 {
+    font-family: 'Lora', serif;
+    color: var(--text-dark);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.card p {
+    margin-bottom: 0.8rem;
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.card .translation {
+    font-style: italic;
+    color: var(--text-light); /* Gris-marrón para la traducción */
+    font-size: 0.95rem;
+}
+
+.card .explanation {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+    border-top: 1px dashed var(--border-soft); /* Borde punteado */
+    padding-top: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+/* Estilo para palabras individuales en la frase (hover) */
+.phrase-word {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 2px solid var(--accent-color); /* Verde oliva para el subrayado */
+    margin: 0 3px;
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: color 0.2s ease;
+}
+
+.phrase-word:hover {
+    color: var(--button-primary); /* Cambia a color de botón principal al pasar el mouse */
+}
+
+.phrase-word .tooltip-text {
+    visibility: hidden;
+    width: auto;
+    background-color: var(--button-primary); /* Color de botón principal para el tooltip */
+    color: var(--card-bg); /* Blanco para el texto del tooltip */
+    text-align: center;
+    border-radius: 5px;
+    padding: 7px 12px;
+    position: absolute;
+    z-index: 10;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity var(--transition-speed), visibility var(--transition-speed);
+    white-space: nowrap;
+    font-size: 0.9rem;
+    pointer-events: none;
+    box-shadow: 0 3px 8px var(--shadow-color);
+}
+
+.phrase-word .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -7px;
+    border-width: 7px;
+    border-style: solid;
+    border-color: var(--button-primary) transparent transparent transparent;
+}
+
+.phrase-word:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Botones de acción (Cargar más / Cargar nuevas palabras) */
+.action-button {
+    background-color: var(--button-accent); /* Dorado suave */
+    color: var(--card-bg); /* Blanco para el texto */
+    border: none;
+    padding: 1.1rem 2.2rem;
+    font-size: 1.15rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px var(--shadow-color);
+    transition: background-color var(--transition-speed) ease, transform 0.2s ease, box-shadow var(--transition-speed) ease;
+    display: block;
+    margin: 2.5rem auto;
+    width: fit-content;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.action-button:hover {
+    background-color: #C79A5E; /* Dorado más oscuro */
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.message {
+    text-align: center;
+    font-style: italic;
+    color: var(--text-light);
+    margin-top: 2rem;
+    font-size: 1.05rem;
+    font-weight: 300;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* --- ESTILOS PARA EL DESAFÍO DE PALABRAS --- */
+.challenge-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px; /* Asegura un tamaño mínimo para la tarjeta */
+    text-align: center;
+    padding: 3rem;
+}
+
+.challenge-word {
+    font-family: 'Lora', serif;
+    font-size: 3.5rem;
+    color: var(--text-dark); /* Color de texto principal */
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.challenge-options-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); /* 2 columnas en pantallas más grandes */
+    gap: 1.2rem; /* Espacio entre opciones */
+    width: 100%;
+    max-width: 600px; /* Ancho máximo para el grid de opciones */
+    margin-bottom: 2.5rem;
+}
+
+.challenge-option-button {
+    background-color: var(--secondary-bg); /* Fondo de botón de opción */
+    color: var(--text-dark);
+    border: 1px solid var(--border-soft);
+    padding: 1rem 1.5rem;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color var(--transition-speed) ease, transform 0.1s ease, box-shadow var(--transition-speed) ease, border-color var(--transition-speed) ease;
+    text-align: center;
+    font-weight: 400;
+}
+
+.challenge-option-button:hover:not(.disabled) {
+    background-color: var(--accent-color); /* Color de acento al pasar el mouse */
+    color: var(--card-bg); /* Texto blanco */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px var(--shadow-color);
+    border-color: var(--accent-color);
+}
+
+.challenge-option-button.correct {
+    background-color: var(--correct-color); /* Verde terroso */
+    border-color: var(--correct-color);
+    color: var(--card-bg);
+    box-shadow: 0 4px 8px rgba(108, 146, 91, 0.4);
+    animation: pulseCorrect 0.6s ease-out;
+}
+
+.challenge-option-button.incorrect {
+    background-color: var(--incorrect-color); /* Rojo suave */
+    border-color: var(--incorrect-color);
+    color: var(--card-bg);
+    box-shadow: 0 4px 8px rgba(189, 106, 111, 0.4);
+    animation: shake 0.4s ease-in-out;
+}
+
+.challenge-option-button.disabled {
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+/* Animaciones para el desafío */
+@keyframes pulseCorrect {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-4px); }
+    40%, 80% { transform: translateX(4px); }
+}
+
+/* --- ESTILOS PARA JUEGO DE MEMORIA --- */
+.memory-game-controls {
+    display: flex;
+    flex-direction: column; /* Apilar elementos verticalmente */
+    align-items: center;
+    gap: 0.8rem; /* Espacio entre los controles */
+    margin-bottom: 2rem;
+    color: var(--text-dark);
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.memory-game-controls p {
+    font-size: 1.4rem; /* Contador más grande */
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.memory-game-controls button {
+    /* Reutilizar estilos de action-button, pero con un modificador */
+    padding: 0.8rem 1.8rem;
+    font-size: 1rem;
+    margin: 0; /* Eliminar el margen auto de action-button */
+}
+
+.memory-grid {
+    display: grid;
+    /* Para 24 cartas: 4 columnas * 6 filas = 24 */
+    /* Ajustado para 5 columnas si las 25 cartas hacen un 5x5 */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Auto-ajuste para 4 o 5 columnas */
+    gap: 12px; /* Espacio entre las tarjetas */
+    max-width: 600px; /* Ancho máximo para el grid del juego */
+    margin: 0 auto; /* Centrar el grid */
+    padding: 20px; /* Más padding alrededor del grid */
+    background-color: var(--secondary-bg); /* Fondo ligeramente diferente para el área de juego */
+    border-radius: 15px;
+    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.1); /* Sombra interna más pronunciada */
+    border: 1px solid var(--border-soft);
+}
+
+.memory-card {
+    width: 100%;
+    /* Relación de aspecto: hacer las tarjetas cuadradas */
+    padding-bottom: 100%; /* Truco para que la altura sea igual al ancho */
+    position: relative;
+    cursor: pointer;
+    transform-style: preserve-3d; /* Permite la rotación 3D */
+    transition: transform 0.6s cubic-bezier(0.68, -0.55, 0.27, 1.55); /* Animación de volteo más pronunciada */
+    border-radius: 10px; /* Bordes de tarjeta ligeramente redondeados */
+    box-shadow: 0 4px 12px var(--shadow-color); /* Sombra más pronunciada para la tarjeta */
+    /* background-color y border-color ya no son necesarios aquí, se definen en .memory-card-back */
+}
+
+.memory-card:hover:not(.flipped):not(.matched) {
+    transform: scale(1.03); /* Ligera escala al pasar el mouse */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15); /* Sombra un poco más grande al hover */
+}
+
+.memory-card.flipped {
+    transform: rotateY(180deg);
+    /* border-color y box-shadow se gestionan en las caras ahora */
+}
+
+.memory-card.matched {
+    opacity: 0.8; /* Ligeramente más opaca cuando encontrada */
+    cursor: default;
+    /* Los colores se aplicarán a las caras para mantener la transición de volteo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    animation: fadeInMatch 0.5s ease-out; /* Animación de aparición suave */
+}
+
+/* Nueva clase base para ambas caras de la tarjeta */
+.memory-card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px; /* Más pequeño para que el texto tenga espacio */
+    backface-visibility: hidden; /* Oculta la cara trasera cuando no está girada */
+    border-radius: 8px; /* Bordes internos más pequeños que la tarjeta */
+    overflow: hidden; /* Asegura que el texto largo no se salga */
+    text-align: center;
+    border: 2px solid; /* Borde para ambas caras, el color variará */
+    box-sizing: border-box; /* Asegura que el padding y borde no afecten el tamaño */
+    line-height: 1.1; /* Espaciado de línea más ajustado */
+}
+
+
+.memory-card-front {
+    background-color: var(--card-face-color); /* Color de la cara visible */
+    transform: rotateY(180deg); /* Gira la parte frontal para que sea visible al voltear */
+    color: var(--text-dark); /* Color de texto para la palabra */
+    font-family: 'Lato', sans-serif;
+    font-size: 1.2rem; /* Tamaño de fuente para las palabras de la tarjeta */
+    font-weight: 700; /* Más negrita */
+    border-color: var(--card-face-color); /* Borde del mismo color que la cara frontal */
+}
+
+.memory-card-back {
+    background-color: var(--card-back-color); /* Mismo color que el fondo de la tarjeta */
+    color: var(--card-bg); /* Texto blanco del logo o icono (signo de interrogación) */
+    font-family: 'Lora', serif;
+    font-size: 2rem; /* Tamaño de fuente para el signo de interrogación */
+    font-weight: 700;
+    border-color: var(--card-back-color); /* Borde del mismo color que la cara trasera */
+}
+
+/* Estado de MATCHED para las caras */
+.memory-card.matched .memory-card-front,
+.memory-card.matched .memory-card-back {
+    background-color: var(--matched-card-color) !important; /* Fuerza el color de fondo para emparejadas */
+    border-color: var(--matched-card-color) !important; /* Fuerza el color de borde */
+}
+
+/* Animación para las tarjetas emparejadas */
+@keyframes fadeInMatch {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 0.8;
+        transform: scale(1);
+    }
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--secondary-bg);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 2.5rem 1rem;
+    margin-top: auto;
+    border-top: 1px solid var(--border-soft);
+    box-shadow: 0 -4px 12px var(--shadow-color);
+}
+
+.footer p {
+    font-size: 0.95rem;
+    opacity: 0.7;
+    color: var(--text-light);
+}
+
+/* Animaciones generales */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-25px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 2.8rem;
+    }
+
+    .main-button {
+        font-size: 1.5rem;
+        padding: 1.2rem 2.5rem;
+    }
+
+    .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.2rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 1.8rem;
+    }
+
+    .action-button {
+        width: 90%;
+    }
+    .challenge-options-grid {
+        grid-template-columns: 1fr;
+    }
+    .challenge-card {
+        padding: 2.5rem 1.5rem;
+        min-height: 350px;
+    }
+    .challenge-word {
+        font-size: 2.8rem;
+    }
+    .memory-grid {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas en tabletas */
+        gap: 10px;
+        padding: 15px;
+    }
+    .memory-card-front {
+        font-size: 1rem; /* Ajuste para tablets */
+    }
+    .memory-card-back {
+        font-size: 1.8rem;
+    }
+    .memory-game-controls p {
+        font-size: 1.3rem;
+    }
+    .memory-game-controls button {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-content {
+        padding: 1.5rem;
+    }
+
+    .main-button {
+        font-size: 1.3rem;
+        padding: 1rem 2rem;
+    }
+
+    .header {
+        padding: 2.5rem 1rem;
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    .header p {
+        font-size: 1rem;
+    }
+
+    .card h3 {
+        font-size: 1.3rem;
+    }
+    .challenge-word {
+        font-size: 2.2rem;
+        margin-bottom: 2rem;
+    }
+    .challenge-option-button {
+        font-size: 1.1rem;
+        padding: 0.9rem;
+    }
+    .memory-grid {
+        grid-template-columns: repeat(3, 1fr); /* 3 columnas en móviles */
+        gap: 8px;
+        padding: 10px;
+    }
+    .memory-card-front {
+        font-size: 0.9rem; /* Más pequeño para móviles */
+    }
+    .memory-card-back {
+        font-size: 1.5rem;
+    }
+    .memory-game-controls p {
+        font-size: 1.1rem;
+    }
+}

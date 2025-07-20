@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Study Pro</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>English Study Pro</h1>
+        <p>Your interactive English learning companion</p>
+    </header>
+
+    <main class="main-content">
+        <section id="home-section" class="section-visible">
+            <div class="button-container">
+                <button id="learn-phrases-btn" class="main-button">Aprender con Frases</button>
+                <button id="quick-words-btn" class="main-button">10 Palabras Rápidas</button>
+                <button id="word-challenge-btn" class="main-button">Desafío de Palabras</button>
+                <button id="memory-game-btn" class="main-button">Juego de Memoria</button>
+            </div>
+        </section>
+
+        <section id="phrases-section" class="hidden-section">
+            <div class="section-header">
+                <h2>Frases para Aprender</h2>
+                <button class="back-button">← Volver al Inicio</button>
+            </div>
+            <div id="phrases-container" class="content-grid">
+                </div>
+            <button id="load-more-phrases-btn" class="action-button">Cargar más frases</button>
+            <p id="no-more-phrases-msg" class="message hidden">¡Has visto todas las frases disponibles!</p>
+        </section>
+
+        <section id="words-section" class="hidden-section">
+            <div class="section-header">
+                <h2>10 Palabras Rápidas</h2>
+                <button class="back-button">← Volver al Inicio</button>
+            </div>
+            <div id="words-container" class="content-grid">
+                </div>
+            <button id="load-new-words-btn" class="action-button">Cargar nuevas 10 palabras</button>
+        </section>
+
+        <section id="challenge-section" class="hidden-section">
+            <div class="section-header">
+                <h2>Desafío de Palabras</h2>
+                <button class="back-button">← Volver al Inicio</button>
+            </div>
+            <div class="challenge-card card">
+                <h3 id="challenge-word-english" class="challenge-word"></h3>
+                <div id="challenge-options" class="challenge-options-grid">
+                    </div>
+                <p id="challenge-feedback" class="message"></p>
+                <button id="next-challenge-btn" class="action-button">Siguiente Palabra</button>
+            </div>
+        </section>
+
+        <section id="memory-game-section" class="hidden-section">
+            <div class="section-header">
+                <h2>Juego de Memoria</h2>
+                <button class="back-button">← Volver al Inicio</button>
+            </div>
+            <div class="memory-game-controls">
+                <p>Pares encontrados: <span id="matches-count">0</span> / <span id="total-pairs">0</span></p>
+                <button id="start-memory-game-btn" class="action-button small-action-button">Iniciar Juego</button>
+            </div>
+            <div id="memory-grid" class="memory-grid">
+                </div>
+            <p id="memory-game-feedback" class="message"></p>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 English Study Pro. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
